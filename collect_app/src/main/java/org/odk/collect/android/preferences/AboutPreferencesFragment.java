@@ -1,11 +1,14 @@
 package org.odk.collect.android.preferences;
 
+import org.odk.collect.android.BuildConfig;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.support.annotation.Nullable;
@@ -28,6 +31,7 @@ public class AboutPreferencesFragment extends BasePreferenceFragment implements 
     public static final String KEY_LEAVE_A_REVIEW = "leave_a_review";
     public static final String KEY_ODK_WEBSITE = "odk_website";
     public static final String KEY_ODK_FORUM = "odk_forum";
+    public static final String KEY_ODK_VERSION = "odk_version";
     private static final String GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=";
     private static final String ODK_WEBSITE = "http://ambar.utpl.edu.ec/";
     private static final String ODK_FORUM = "https://forum.opendatakit.org";
@@ -49,6 +53,11 @@ public class AboutPreferencesFragment extends BasePreferenceFragment implements 
 //        findPreference(KEY_OPEN_SOURCE_LICENSES).setOnPreferenceClickListener(this);
 //        findPreference(KEY_TELL_YOUR_FRIENDS).setOnPreferenceClickListener(this);
 //        findPreference(KEY_LEAVE_A_REVIEW).setOnPreferenceClickListener(this);
+
+        int versionCode = BuildConfig.VERSION_CODE;
+        String versionName = BuildConfig.VERSION_NAME;
+        findPreference(KEY_ODK_VERSION).setSummary(versionName);
+
         websiteTabHelper = new CustomTabHelper();
         forumTabHelper = new CustomTabHelper();
         websiteUri = Uri.parse(ODK_WEBSITE);

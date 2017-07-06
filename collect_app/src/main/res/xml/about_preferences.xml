@@ -31,4 +31,10 @@
         android:summary="@string/open_data_kit"
         android:title="@string/powered_by" />
 
+    <PreferenceScreen
+        android:key="odk_version"
+        android:selectable="false"
+        android:summary=""
+        android:title="@string/version" />
+
 </PreferenceScreen>

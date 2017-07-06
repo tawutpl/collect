@@ -223,8 +223,8 @@ public class MainMenuActivity extends AppCompatActivity {
         {
             // dynamically construct the "ODK Collect vA.B" string
             TextView mainMenuMessageLabel = (TextView) findViewById(R.id.main_menu_header);
-            mainMenuMessageLabel.setText(Collect.getInstance()
-                    .getVersionedAppName());
+            /*mainMenuMessageLabel.setText(Collect.getInstance()
+                    .getVersionedAppName());*/
         }
 
         File f = new File(Collect.ODK_ROOT + "/collect.settings");
