@@ -6,22 +6,29 @@
         android:summary="@string/odk_website_summary"
         android:title="@string/odk_website"/>
 
+
     <PreferenceScreen
         android:id="@+id/odk_forum"
         android:key="odk_forum"
-        android:summary="@string/odk_forum_summary"
+        android:selectable="false"
+        android:summary="@string/prototypes_lab"
         android:title="@string/odk_forum"/>
 
     <PreferenceScreen
         android:key="tell_your_friends"
-        android:title="@string/tell_your_friends" />
+        android:selectable="false"
+        android:title="" />
 
     <PreferenceScreen
         android:key="leave_a_review"
-        android:title="@string/leave_a_review" />
+        android:selectable="false"
+        android:summary="@string/modified_author"
+        android:title="@string/modified_by" />
 
     <PreferenceScreen
         android:key="open_source_licenses"
-        android:title="@string/all_open_source_licenses" />
+        android:selectable="false"
+        android:summary="@string/open_data_kit"
+        android:title="@string/powered_by" />
 
 </PreferenceScreen>

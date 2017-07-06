@@ -29,7 +29,7 @@ public class AboutPreferencesFragment extends BasePreferenceFragment implements 
     public static final String KEY_ODK_WEBSITE = "odk_website";
     public static final String KEY_ODK_FORUM = "odk_forum";
     private static final String GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=";
-    private static final String ODK_WEBSITE = "https://opendatakit.org";
+    private static final String ODK_WEBSITE = "http://ambar.utpl.edu.ec/";
     private static final String ODK_FORUM = "https://forum.opendatakit.org";
 
     private CustomTabHelper websiteTabHelper;
@@ -45,10 +45,10 @@ public class AboutPreferencesFragment extends BasePreferenceFragment implements 
         addPreferencesFromResource(R.xml.about_preferences);
 
         findPreference(KEY_ODK_WEBSITE).setOnPreferenceClickListener(this);
-        findPreference(KEY_ODK_FORUM).setOnPreferenceClickListener(this);
-        findPreference(KEY_OPEN_SOURCE_LICENSES).setOnPreferenceClickListener(this);
-        findPreference(KEY_TELL_YOUR_FRIENDS).setOnPreferenceClickListener(this);
-        findPreference(KEY_LEAVE_A_REVIEW).setOnPreferenceClickListener(this);
+//        findPreference(KEY_ODK_FORUM).setOnPreferenceClickListener(this);
+//        findPreference(KEY_OPEN_SOURCE_LICENSES).setOnPreferenceClickListener(this);
+//        findPreference(KEY_TELL_YOUR_FRIENDS).setOnPreferenceClickListener(this);
+//        findPreference(KEY_LEAVE_A_REVIEW).setOnPreferenceClickListener(this);
         websiteTabHelper = new CustomTabHelper();
         forumTabHelper = new CustomTabHelper();
         websiteUri = Uri.parse(ODK_WEBSITE);

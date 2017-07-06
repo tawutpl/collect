@@ -367,8 +367,8 @@
   <string name="parser_exception">Excepción XPathParser: \"%s\"</string>
   <string name="selected_answer">Seleccionado: %s</string>
   <string name="version_number">Versión: %s</string>
-  <string name="odk_website">Visitar el sitio web de ODK</string>
-  <string name="odk_forum">Unirse al foro de ODK</string>
+  <string name="odk_website">Visitar el sitio web de Ambar</string>
+  <string name="odk_forum">Laboratorio de Ciencias de datos</string>
   <!--%1$s represents degrees, %2$s represents minutes and %3$s represents seconds as in W 18°48'8"-->
   <string name="west">O %1$s%2$s%3$s</string>
   <!--%1$s represents degrees, %2$s represents minutes and %3$s represents seconds as in E 18°48'8"-->
@@ -459,4 +459,7 @@
   <string name="take_picture_instruction">Toca la pantalla para tomar una foto</string>
   <string name="request_permission">Esta aplicación necesita permisos para usar la cámara</string>
   <string name="camera_error">Este dispositivo no soporta el API Camera2</string>
+  <string name="odk_website_summary">Ambar es un Portal de Datos creado con el propósito de desarrollar una nueva infraestructura de datos abierta en el contexto de Gestión Inteligente de Territorios.</string>
+    <string name="modified_by">Modificado por by:</string>
+    <string name="prototypes_lab">Laboratorio de prototipos</string>
 </resources>

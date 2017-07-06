@@ -379,9 +379,9 @@
     <string name="parser_exception">XPathParser Exception: \"%s\"</string>
     <string name="selected_answer">Selected: %s</string>
     <string name="version_number">Version: %s</string>
-    <string name="odk_website">Visit the ODK website</string>
-    <string name="odk_website_summary">Open Data Kit (ODK) is used to collect data for social good in challenging environments.</string>
-    <string name="odk_forum">Join the ODK forum</string>
+    <string name="odk_website">Visit Ambar website</string>
+    <string name="odk_website_summary">Ambar is a Data Portal created with the purpose of developing a new data infrastructure in the context of Intelligent Territory Management.</string>
+    <string name="odk_forum">Data Science Lab</string>
     <string name="odk_forum_summary">Join the forum to get support, request features, contribute code/translations!</string>
     <string name="all_open_source_licenses">Open source libraries and licenses</string>
 
@@ -509,4 +509,9 @@
     <string name="form_entry">Uncheck to hide from Form Entry</string>
     <string name="use_device_language">Use device language</string>
     <string name="not_supported_offline_layer_format">Selected offline layer file uses the PBF format which is not supported!</string>
+    <string name="modified_by">Modified by:</string>
+    <string name="modified_author">\@joseeguigurenp</string>
+    <string name="powered_by">Powered by ODK</string>
+    <string name="open_data_kit">Open Data Kit</string>
+    <string name="prototypes_lab">Prototype laboratory</string>
 </resources>
